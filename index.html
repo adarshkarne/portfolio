@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adarsh Karne · Portfolio</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#1c2430;--mu:#5d6876;--ac:#149ddd;--bd:#e3e6ea;--side:#1b2029;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12161c;--card:#1b2029;--tx:#e8ecf1;--mu:#9aa5b3;--bd:#2a313b;--side:#0c0f14;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12161c;--card:#1b2029;--tx:#e8ecf1;--mu:#9aa5b3;--bd:#2a313b;--side:#0c0f14;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--ac);text-decoration:none}
+nav{position:fixed;left:0;top:0;bottom:0;width:240px;background:var(--side);color:#cfd6df;padding:32px 20px;display:flex;flex-direction:column;gap:6px;z-index:5}
+nav .av{width:96px;height:96px;border-radius:50%;margin:0 auto 10px;background:linear-gradient(135deg,#149ddd,#6a5acd);display:grid;place-items:center;font-size:2rem;font-weight:700;color:#fff;border:4px solid #2c3440}
+nav .nm{text-align:center;color:#fff;font-size:1.2rem;font-weight:700;margin-bottom:14px}
+nav a.l{color:#cfd6df;padding:9px 14px;border-radius:8px;font-size:.95rem}
+nav a.l:hover,nav a.l.on{background:#262d38;color:#fff}
+nav a.l.on{box-shadow:inset 3px 0 var(--ac)}
+.soc{margin-top:auto;display:flex;gap:12px;justify-content:center;font-size:.85rem}
+main{margin-left:240px}
+section{padding:72px 8vw;max-width:1000px}
+#home{min-height:100vh;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(135deg,#0c0f14,#1b2a3d);color:#fff;max-width:none}
+#home h1{font-size:clamp(2.2rem,6vw,3.8rem);margin:0;letter-spacing:-.02em}
+#home p{font-size:1.5rem;margin:8px 0 0}
+#typed{color:var(--ac);font-weight:600}
+#typed::after{content:"|";animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}
+h2{font-size:1.8rem;margin:0 0 6px}h2+.sub{color:var(--mu);margin:0 0 28px;max-width:60ch}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px 22px;margin-bottom:16px}
+.card h3{margin:0;font-size:1.05rem}.meta{color:var(--mu);font-size:.88rem;margin:2px 0 8px}
+.card ul{margin:0;padding-left:18px}.card li{margin:4px 0}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 24px;margin-top:20px;list-style:none;padding:0}
+.info b{color:var(--ac)}
+.chips span,.tag{display:inline-block;background:var(--card);border:1px solid var(--bd);border-radius:99px;padding:3px 13px;margin:4px 6px 0 0;font-size:.88rem}
+.tl{border-left:2px solid var(--ac);padding-left:22px;margin-left:6px}
+.tl .card{position:relative}.tl .card::before{content:"";position:absolute;left:-31px;top:24px;width:12px;height:12px;border-radius:50%;background:var(--ac);border:2px solid var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+a.proj{display:block;color:var(--tx);overflow:hidden;padding:0}
+a.proj .th{height:90px;background:linear-gradient(135deg,var(--ac),#6a5acd);display:grid;place-items:center;color:#fff;font-weight:700;letter-spacing:.04em}
+a.proj div.b{padding:14px 18px}a.proj:hover{border-color:var(--ac)}
+.btn{display:inline-block;border:1px solid var(--ac);padding:9px 18px;border-radius:8px;margin:12px 10px 0 0}
+.btn:hover{background:var(--ac);color:#fff}
+.mb{display:none}
+@media (max-width:860px){nav{position:sticky;top:0;bottom:auto;width:auto;flex-direction:row;overflow-x:auto;padding:10px 12px;gap:4px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+nav .av,nav .nm,.soc{display:none}nav a.l{white-space:nowrap}main{margin-left:0}section{padding:56px 20px}#home{min-height:80vh}}
+</style></head><body>
+<nav id="nav">
+<div class="av">AK</div><div class="nm">Adarsh Karne</div>
+<a class="l on" href="#home">Home</a><a class="l" href="#about">About</a><a class="l" href="#education">Education</a><a class="l" href="#experience">Experience</a><a class="l" href="#projects">Projects</a><a class="l" href="#skills">Skills</a><a class="l" href="#contact">Contact</a>
+<div class="soc"><a href="https://github.com/adarshkarne">GitHub</a><a href="https://linkedin.com/in/adarsh-karne-255727375">LinkedIn</a><a href="https://www.hackerrank.com/profile/adarsh_karne">HackerRank</a></div>
+</nav>
+<main>
+<section id="home"><h1>Adarsh Karne</h1><p>I’m a <span id="typed"></span></p></section>
+
+<section id="about"><h2>About</h2>
+<p class="sub">Data Engineer with 5 years of experience designing and maintaining scalable batch and near-real-time ETL/ELT pipelines across AWS and Azure. I work with Python, PySpark, Spark and SQL, build lakehouse and Medallion architectures, and put data quality first. I also evaluate RAG, LLMs and vector search to make enterprise data easier to use.</p>
+<ul class="info"><li><b>Role:</b> Data Engineer</li><li><b>Company:</b> Apple</li><li><b>Experience:</b> 5 years</li><li><b>Email:</b> adarshkarne82@gmail.com</li></ul>
+<h3 style="margin-top:28px">Interests</h3>
+<div class="chips"><span>Data Engineering</span><span>Cloud (Azure &amp; AWS)</span><span>ETL / ELT</span><span>Apache Spark</span><span>Lakehouse &amp; Medallion</span><span>Data Quality</span><span>Infrastructure as Code</span><span>RAG &amp; LLMs</span></div></section>
+
+<section id="education"><h2>Education</h2><p class="sub"></p>
+<div class="card"><h3>M.S. in Data Science · University of Massachusetts Dartmouth</h3><div class="meta">2025</div></div>
+<div class="card"><h3>Bachelor’s in Electronics &amp; Communication Engineering · CMR Technical Campus</h3><div class="meta">2022</div></div></section>
+
+<section id="experience"><h2>Experience</h2><p class="sub"></p><div class="tl">
+<div class="card"><h3>Data Engineer · Apple</h3><div class="meta">Feb 2024 – Present · Cupertino, CA</div><ul><li>Designed and maintained scalable batch and near-real-time ETL/ELT pipelines in Python, PySpark, Pandas and NumPy, processing large volumes of structured and semi-structured data in AWS.</li><li>Built end-to-end ingestion from relational databases, REST APIs and external sources, with cleansing, validation and reconciliation to deliver analytics-ready datasets.</li><li>Optimized complex SQL for analytical workloads using indexing, partitioning and efficient data modeling.</li><li>Designed an Amazon S3 data lake with raw, processed and curated layers, applying Medallion (bronze/silver/gold) architecture.</li><li>Built AWS Glue ETL jobs and Glue Data Catalog metadata; modeled and tuned analytical datasets in Amazon Redshift for BI.</li><li>Designed and implemented scalable ELT pipelines inside Snowflake using Dynamic Tables and Tasks, reducing end-to-end data latency and simplifying codebase maintenance.</li><li>Built automated, continuous ingestion pipelines with Snowpipe to stream structured and semi-structured (JSON, Parquet) data from AWS S3 into core data warehouse layers.</li><li>Orchestrated enterprise workflows with dbt to manage dependencies, schema migrations and data models across Snowflake multi-cluster environments.</li><li>Developed incremental loading architectures using Snowflake Streams (CDC) and scheduled Tasks, minimizing redundant compute and optimizing processing windows.</li><li>Automated event-driven pipelines with AWS Lambda and Step Functions; monitored runs and failures with CloudWatch.</li><li>Implemented data quality frameworks: schema validation, duplicate detection, reconciliation, completeness checks and anomaly detection.</li><li>Automated provisioning and deployments with Terraform, Docker and CI/CD across dev, test and production.</li><li>Evaluated RAG, LLMs, embeddings and vector search for enterprise data retrieval; used AI coding assistants for PySpark/SQL, testing, reviews and documentation.</li><li>Partnered with architects, analytics teams and stakeholders on data modeling, governance, metadata management and access controls.</li></ul></div>
+<div class="card"><h3>Data Engineer · Capgemini</h3><div class="meta">Jan 2021 – Jan 2023 · Pune, India</div><ul><li>Built Azure Data Factory pipelines for batch processing and enterprise warehouse loading, handling 20M+ records a month with validation and quality checks.</li><li>Developed parameterized ADF pipelines and Azure Databricks notebooks, loading curated data into ADLS Gen2 and Azure SQL/Synapse for Power BI reporting.</li><li>Transformed large datasets with Python (Pandas, NumPy), PySpark, Spark and Databricks; managed cluster configuration, autoscaling and job compute.</li><li>Connected Databricks to Azure SQL Database, Synapse, ADLS Gen2 and external sources for integrated processing.</li><li>Optimized SQL, indexing and schemas; applied statistical analysis and anomaly detection to maintain data integrity.</li><li>Monitored pipelines, performed root-cause analysis and implemented fixes; automated recurring jobs with Python and Unix shell.</li><li>Developed dbt models for transformations, validation and quality checks, following data governance standards.</li></ul></div>
+</div></section>
+
+<section id="projects"><h2>Projects</h2><p class="sub">Selected repositories from my GitHub.</p><div class="grid">
+<a class="card proj" href="https://github.com/adarshkarne/flask-python"><div class="th">FLASK</div><div class="b"><h3>flask-python</h3><div class="meta">Python</div></div></a>
+<a class="card proj" href="https://github.com/adarshkarne/weatherapp"><div class="th">WEATHER</div><div class="b"><h3>weatherapp</h3><div class="meta">Python</div></div></a>
+<a class="card proj" href="https://github.com/adarshkarne/WebApp"><div class="th">WEB</div><div class="b"><h3>WebApp</h3><div class="meta">HTML</div></div></a>
+<a class="card proj" href="https://github.com/adarshkarne/mutation_testing-main"><div class="th">TESTING</div><div class="b"><h3>mutation_testing</h3><div class="meta">JavaScript</div></div></a>
+</div><a class="btn" href="https://github.com/adarshkarne?tab=repositories">All 21 repositories</a></section>
+
+<section id="skills"><h2>Skills</h2><p class="sub"></p>
+<h3>Languages &amp; Data</h3><div class="chips"><span>Python</span><span>PySpark</span><span>Pandas</span><span>NumPy</span><span>SQL / T-SQL</span><span>Java</span><span>Shell</span><span>dbt</span><span>MySQL</span><span>SQL Server</span><span>PostgreSQL</span><span>MongoDB</span></div>
+<h3>Data Warehouses</h3><div class="chips"><span>Snowflake</span><span>Snowpipe</span><span>Dynamic Tables</span><span>Streams &amp; Tasks</span><span>Amazon Redshift</span><span>Azure Synapse</span></div>
+<h3>Azure</h3><div class="chips"><span>Data Factory</span><span>Databricks</span><span>ADLS Gen2</span><span>Synapse Analytics</span><span>Microsoft Fabric</span><span>Delta Lake</span><span>Azure DevOps</span><span>Key Vault</span></div>
+<h3>AWS</h3><div class="chips"><span>S3</span><span>Glue</span><span>Redshift</span><span>Lambda</span><span>Step Functions</span><span>EC2</span><span>CloudWatch</span><span>RDS</span></div>
+<h3>AI / ML</h3><div class="chips"><span>RAG</span><span>LLMs</span><span>Embeddings</span><span>Vector DB</span><span>Graph DB</span><span>Azure OpenAI</span><span>Azure AI Search</span><span>Flowise AI</span><span>Prompt Engineering</span></div>
+<h3>DevOps, BI &amp; Other</h3><div class="chips"><span>Docker</span><span>Terraform</span><span>CI/CD</span><span>Git</span><span>GitHub Actions</span><span>Power BI</span><span>Data Warehousing</span><span>Data Modeling</span><span>REST APIs</span><span>Agile / Scrum</span></div></section>
+
+<section id="contact"><h2>Contact</h2><p class="sub">Open to data engineering opportunities.</p>
+<a class="btn" href="mailto:adarshkarne82@gmail.com">Email</a><a class="btn" href="https://linkedin.com/in/adarsh-karne-255727375">LinkedIn</a><a class="btn" href="https://github.com/adarshkarne">GitHub</a><a class="btn" href="https://www.hackerrank.com/profile/adarsh_karne">HackerRank</a></section>
+</main>
+<script>
+(function(){
+var w=["Data Engineer","Azure &amp; AWS Developer","Spark Pipeline Builder","AI-Curious Problem Solver"].map(function(s){return s.replace("&amp;","&")});
+var el=document.getElementById("typed"),i=0,j=0,del=false;
+function t(){var s=w[i];j+=del?-1:1;el.textContent=s.slice(0,j);var d=del?40:90;
+if(!del&&j===s.length){del=true;d=1400}else if(del&&j===0){del=false;i=(i+1)%w.length;d=300}setTimeout(t,d)}
+t();
+var ls=[].slice.call(document.querySelectorAll("nav a.l"));
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){ls.forEach(function(l){l.classList.toggle("on",l.getAttribute("href")==="#"+e.target.id)})}})},{rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("section").forEach(function(s){io.observe(s)});
+})();
+</script></body></html>
